@@ -1,8 +1,6 @@
 @startuml
 skinparam classAttributeIconSize 0
 package "class Strategy(策略模式)" #DDDDDD {
-    note "定义: 定义一种算法, 将每一个算法封装起来,\n从而使他们可以相互切换" as N1
-
     class Client
 
     class Context {
@@ -10,7 +8,7 @@ package "class Strategy(策略模式)" #DDDDDD {
         +Context():Strategy;
         +void contextInterface();
     }
-    note top:上下文环境
+    note right:上下文环境
 
     interface Strategy {
         +void algorithmLogic();
@@ -20,14 +18,29 @@ package "class Strategy(策略模式)" #DDDDDD {
     class ConcreteStrategyA {
         +void algorithmLogic();
     }
+    note right:策略实现A
 
     class ConcreteStrategyB {
-            +void algorithmLogic();
+        +void algorithmLogic();
     }
+    note right:策略实现B
 
     Context <.. Client
     Context o-- Strategy
     Strategy <|.. ConcreteStrategyA : 实现
     Strategy <|.. ConcreteStrategyB : 实现
 }
+note as N1
+      定义: 定义一种算法, 将每一个算法封装起来,从而使他们可以相互切换
+
+      优点:   1. 良好的扩展性,增加一种策略只要实现接口,写上具体的逻辑,
+      当策略不需要时,直接删除就行
+                2. 良好的封装性,策略的入口封装在Context中,使用者只用知
+      到使用哪种策略就传哪种策略对象就可以
+                3. 避免了像简单工厂模式的条件判断
+
+      缺点:   1. 使用者必须了解策略组的各个策略, 并决定使用哪一种, 策略
+      需要暴露给使用者
+                2. 如果策略越多, 策略类数量也就越多
+    end note
 @enduml

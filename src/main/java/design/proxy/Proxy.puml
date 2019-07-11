@@ -2,26 +2,26 @@
 skinparam classAttributeIconSize 0
 
 package "class Proxy(代理模式)" #DDDDDD {
-    note "定义: 为其它对象提供一个代理对象,\n并由代理对象控制这个对象的访问" as N1
 
     class Client
 
     interface Subject
     {
-    +movie()
+    +movie();
     }
     note right: 抽象主题类(接口)
 
     class Star
     {
-    +movie()
+    +movie();
     }
     note right: 真实主题(被代理类)类
 
     class Agent
     {
-    -Subject:Star
-    +movie()
+    -Subject subject;
+    +Agent():Subject;
+    +movie();
     }
     note right: 代理类
 
@@ -30,4 +30,14 @@ package "class Proxy(代理模式)" #DDDDDD {
     Subject <|.. Agent : 实现
     Star <-- Agent
 }
+note as N1
+      定义: 为其它对象提供一个代理对象,并由代理对象控制这个对象的访问
+
+      优点:  1. 良好的扩展性, 修改被代理角色并不影响调用者使用代理,
+      对于调用者,被代理角色是透明的
+                2. 隔离降低耦合度, 代理角色协调调用者和被代理角色,被代理
+      角色只需要实现本身关心的业务,非自己本职业务通过代理处理和隔离
+
+      缺点:   1. 增加了代理类,实现需要经过代理,因此请求的速度会变慢
+    end note
 @enduml
