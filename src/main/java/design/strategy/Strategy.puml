@@ -1,0 +1,33 @@
+@startuml
+skinparam classAttributeIconSize 0
+package "class Strategy(策略模式)" #DDDDDD {
+    note "定义: 定义一种算法, 将每一个算法封装起来,\n从而使他们可以相互切换" as N1
+
+    class Client
+
+    class Context {
+        -Strategy strategy;
+        +Context():Strategy;
+        +void contextInterface();
+    }
+    note top:上下文环境
+
+    interface Strategy {
+        +void algorithmLogic();
+    }
+    note right: 策略的抽象
+
+    class ConcreteStrategyA {
+        +void algorithmLogic();
+    }
+
+    class ConcreteStrategyB {
+            +void algorithmLogic();
+    }
+
+    Context <.. Client
+    Context o-- Strategy
+    Strategy <|.. ConcreteStrategyA : 实现
+    Strategy <|.. ConcreteStrategyB : 实现
+}
+@enduml
