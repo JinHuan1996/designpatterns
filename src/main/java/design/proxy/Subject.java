@@ -1,4 +1,4 @@
-package design.agency;
+package design.proxy;
 
 /**
  * 抽象主题角色 代理者和被代理者都要实现.

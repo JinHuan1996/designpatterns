@@ -1,4 +1,4 @@
-package design.agency;
+package design.proxy;
 
 /**
  * 被代理者.
