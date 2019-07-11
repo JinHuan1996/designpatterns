@@ -1,0 +1,33 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+package "class Proxy(代理模式)" #DDDDDD {
+    note "定义: 为其它对象提供一个代理对象,\n并由代理对象控制这个对象的访问" as N1
+
+    class Client
+
+    interface Subject
+    {
+    +movie()
+    }
+    note right: 抽象主题类(接口)
+
+    class Star
+    {
+    +movie()
+    }
+    note right: 真实主题(被代理类)类
+
+    class Agent
+    {
+    -Subject:Star
+    +movie()
+    }
+    note right: 代理类
+
+    Subject <.. Client
+    Subject <|.. Star : 实现
+    Subject <|.. Agent : 实现
+    Star <-- Agent
+}
+@enduml
