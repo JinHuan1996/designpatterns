@@ -1,0 +1,55 @@
+@startuml
+skinparam classAttributeIconSize 0
+package "class Template(模板方法模式)" #DDDDDD {
+
+    abstract class AbstractBike
+    {
+        #boolean isNeedUnlock;
+        #{abstract} void unlock();
+        #{abstract} void ride();
+        #{abstract} void lock();
+        #{abstract} void pay();
+        #void isNeedUnlock():boolean;
+        +final void use();
+    }
+    note right: 定义算法框架的抽象类
+
+    class OfoBike
+    {
+        #void unlock();
+        #void ride();
+        #void lock();
+        #void pay();
+    }
+    note right: 具体实现类A
+
+    class BlueBike
+    {
+        #void unlock();
+        #void ride();
+        #void lock();
+        #void pay();
+        #void isNeedUnlock():boolean;
+    }
+    note right: 具体实现类B
+
+    AbstractBike <|-- OfoBike
+    AbstractBike <|-- BlueBike
+}
+note as N1
+  定义: 定义抽象类并且声明一些抽象基本方法供子类实现不同逻辑,
+  同时在抽象类中定义具体方法吧抽象基本方法封装起来.
+
+  基本方法
+  抽象方法：由抽象模板角色声明，abstract修饰，具体模板角色实现。
+  钩子方法：由抽象模板角色声明并实现，具体模板角色可实现加以扩展。
+  具体方法：由抽象模板角色声明并实现，而子类并不实现。
+
+  优点:  1.良好的封装性,把共有不便的方法封装在父类,子类负责实现具体逻辑
+            2.良好的扩展性,增加功能由子类实现基本方法扩展,符合单一和开闭原则
+            3.复用代码
+
+  缺点:   1.由于是通过继承实现代码复用来改变算法,灵活度会降低
+             2.子类的执行影响父类的结果,增加代码的月度难度.
+end note
+@enduml
