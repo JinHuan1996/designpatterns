@@ -1,0 +1,59 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+package "class FactoryMethod(工厂方法模式)" #DDDDDD {
+
+    interface Factory
+    {
+    +Product factory();
+    }
+    note left:工厂接口
+
+    interface Product
+    {
+    +void product();
+    }
+    note right:产品接口
+
+    class IceCreamFactory
+    {
+    +Product factory();
+    }
+    note bottom: 雪糕工厂
+
+    class PizzaFactory
+    {
+    +Product factory();
+    }
+    note bottom: 披萨工厂
+
+    class IceCream
+    {
+    +void product();
+    }
+    note bottom: 雪糕产品
+
+    class Pizza
+    {
+    +void product();
+    }
+    note bottom: 披萨产品
+
+    Factory <|.. IceCreamFactory
+    Factory <|.. PizzaFactory
+    Product <|.. IceCream
+    Product <|.. Pizza
+    Factory o- Product: 聚合
+}
+note as N1
+  定义: 定义一个创建对象的工厂接口, 工厂方法将实例化推迟到子类中
+
+  优点:   1. 优秀的扩展性,假如有新的对象需要工厂创建以这个对象
+  创建对应的工厂以及产品
+            2. 大降低代码耦合,使用者最终得到的是产品对象本身,而不
+  需要知道和操作产品生产的过程
+
+  缺点:   1. 增加新产品时,需要增加具体的工厂类和具体的产品类,
+  当产品数量多的时候就会造成系统的复杂度增大,也增加了对系统理解的难度
+end note
+@enduml
