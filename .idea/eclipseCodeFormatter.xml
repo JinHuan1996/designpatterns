@@ -4,7 +4,7 @@
     <option name="projectSpecificProfile">
       <ProjectSpecificProfile>
         <option name="formatter" value="ECLIPSE" />
-        <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../MBL-DOC/01.流程规范/01.编码规范/静态检查/规则集合/Cheetah_java_code_formatter_4E.xml" />
+        <option name="pathToConfigFileJava" value="$PROJECT_DIR$/../new-doc/MBL-DOC/01.流程规范/01.编码规范/静态检查/规则集合/Cheetah_java_code_formatter_4E.xml" />
         <option name="selectedJavaProfile" value="Cheetah-Formatter" />
       </ProjectSpecificProfile>
     </option>
