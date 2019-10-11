@@ -1,40 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="037b049c-e300-4982-9b0d-7a11d4778bd4" name="Default" comment="门面">
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/factory/factorymethod/Factory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/factory/factorymethod/FactoryA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/factory/factorymethod/FactoryB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/factory/factorymethod/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/factory/factorymethod/ProductA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/factory/factorymethod/ProductB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/factory/factorymethod/TestMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/factory/simplefactory/Factory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/factory/simplefactory/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/factory/simplefactory/ProductA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/factory/simplefactory/ProductB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/factory/simplefactory/TestMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/singleton/SingletonThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/singleton/TestMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/singleton/enum1/LazySingletonEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/singleton/hungry/HungrySingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/singleton/hungry/HungryStaticSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/singleton/lazy/LazyDoubleCheckSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/singleton/lazy/LazyFierceSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/singleton/lazy/LazySingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/singleton/threadlocal/ThreadLocalSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/eclipseCodeFormatter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/eclipseCodeFormatter.xml" afterDir="false" />
+    <list default="true" id="037b049c-e300-4982-9b0d-7a11d4778bd4" name="Default" comment="练习工厂和单例模式">
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/prototype/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/prototype/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/prototype/PrototypeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/proxy/dynamic/cglib/ProxyFactoryCglibSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/proxy/dynamic/cglib/ProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/proxy/dynamic/cglib/RealSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/proxy/dynamic/jdk/ProxyFactoryImplSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/proxy/dynamic/jdk/ProxyFactorySubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/proxy/dynamic/jdk/ProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/proxy/dynamic/jdk/RealSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/proxy/dynamic/jdk/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/proxy/staticproxy/ProxySubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/proxy/staticproxy/ProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/proxy/staticproxy/RealSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/designpatterns/proxy/staticproxy/Subject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/singleton/LazyThreadSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/singleton/LazyThreadSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/design/observer/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/observer/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/design/observer/HappySheep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/observer/HappySheep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/design/observer/LazySheep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/observer/LazySheep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/design/observer/Observer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/observer/Observer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/design/observer/PanShuWen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/observer/PanShuWen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/design/observer/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/observer/Subject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/design/observer/Wolf.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/observer/Wolf.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,18 +63,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="UML Sequence" />
-        <option value="Interface" />
         <option value="Kotlin Enum" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>ski</find>
-      <find>skinparam</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -118,13 +96,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/designpatterns/factory/factorymethod" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/designpatterns/proxy/dynamic/cglib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="EclipseFormatter" />
+    <property name="settings.editor.selected.configurable" value="com.nnthink.aixcoder.config.Config" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\project\designpatterns\src\main\java\designpatterns\proxy\dynamic\cglib" />
+      <recent name="C:\project\designpatterns\src\main\java\designpatterns\proxy\dynamic" />
       <recent name="C:\project\designpatterns\src\main\java\designpatterns\factory\factorymethod" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -148,14 +128,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestMain (2)">
-    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="design.template.Client" />
+  <component name="RunManager" selected="Application.ProxyTest (1)">
+    <configuration name="PrototypeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designpatterns.prototype.PrototypeTest" />
       <module name="designpatterns" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="design.template.*" />
+          <option name="PATTERN" value="designpatterns.prototype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,13 +143,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="design.facade.Client" />
+    <configuration name="ProxyTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designpatterns.proxy.dynamic.cglib.ProxyTest" />
       <module name="designpatterns" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="design.facade.*" />
+          <option name="PATTERN" value="designpatterns.proxy.dynamic.cglib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProxyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designpatterns.proxy.staticproxy.ProxyTest" />
+      <module name="designpatterns" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="designpatterns.proxy.staticproxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProxyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="designpatterns.proxy.dynamic.jdk.ProxyTest" />
+      <module name="designpatterns" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="designpatterns.proxy.dynamic.jdk.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -205,20 +213,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="designpatterns.factory.simplefactory.TestMain" />
-      <module name="designpatterns" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="designpatterns.factory.simplefactory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -243,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProxyTest (1)" />
+        <item itemvalue="Application.ProxyTest (1)" />
+        <item itemvalue="Application.ProxyTest" />
+        <item itemvalue="Application.PrototypeTest" />
         <item itemvalue="Application.TestMain (2)" />
-        <item itemvalue="Application.TestMain (1)" />
-        <item itemvalue="Application.TestMain" />
-        <item itemvalue="Application.Client (3)" />
-        <item itemvalue="Application.Client (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +265,10 @@
       <workItem from="1562926203746" duration="8420000" />
       <workItem from="1563004488380" duration="2170000" />
       <workItem from="1563195951236" duration="3636000" />
-      <workItem from="1569719426081" duration="15408000" />
+      <workItem from="1569719426081" duration="18416000" />
+      <workItem from="1570275822611" duration="601000" />
+      <workItem from="1570587978923" duration="4287000" />
+      <workItem from="1570760562306" duration="15808000" />
     </task>
     <task id="LOCAL-00001" summary="包名修改">
       <created>1562810532589</created>
@@ -329,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569577829059</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="练习工厂和单例模式">
+      <created>1569742274699</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1569742274700</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -349,7 +353,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -362,7 +368,29 @@
     <MESSAGE value="模板方法模式" />
     <MESSAGE value="。。。。" />
     <MESSAGE value="门面" />
-    <option name="LAST_COMMIT_MESSAGE" value="门面" />
+    <MESSAGE value="练习工厂和单例模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="练习工厂和单例模式" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/designpatterns/proxy/dynamic/jdk/ProxyFactorySubject.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/designpatterns/proxy/dynamic/jdk/ProxyTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/designpatterns/proxy/dynamic/cglib/ProxyFactoryCglibSubject.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
